@@ -8,6 +8,10 @@
 
   <style>
 
+    .link:hover {
+      color: red;
+    }
+
     .price {
       color: green;
       font-weight: bold;
@@ -22,21 +26,39 @@
     border-radius: 18px;
     cursor: pointer;
     margin-right: 8px;
+    transition: opacity 0.2s, background-color 0.2s;
+    }
+
+    .cart-button:hover {
+      background-color: #ffd12b;
+    }
+
+    .cart-button:active {
+      opacity: 0.3;
     }
 
     .buy-button {
-    background-color: #e5a552;
+    background-color: #d3903d;
     border: none;
     color: black;
     height: 30px;
     width: 130px;
     border-radius: 18px;
     cursor: pointer;
+    transition: opacity 0.2s, background-color 0.2s;
+    }
+
+    .buy-button:hover {
+      background-color: #c68d47;
+    }
+
+    .buy-button:active {
+      opacity: 0.3;
     }
 
   </style>
 
-  <a href="https://amazon.com" target="_blank">Back to Amazon</a>
+  <a class="link" href="https://amazon.com" target="_blank">Back to Amazon</a>
 
   <h1>Nike Black Running Shoes</h1>
 
